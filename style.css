@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial;
+    transition: all .5s ease-in-out;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 100px;
+}
+
+.banner{
+    position: relative;
+    min-height: 100vh;
+    background: url(bgg2.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    padding-bottom: 65px;
+}
+
+.banner h2{
+    font-size: 3em;
+    color: rgb(63, 106, 245);
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.banner h2 span{
+    font-size: 1.5em;
+    color: chartreuse;
+    font-family: 'Akronim', cursive;
+}
+
+.banner h3{
+    font-size: 1.5em;
+    color: rgb(63, 106, 245);
+    font-weight: 500;
+}
+
+.btn{
+    position: relative;
+    background-color: none;
+    display: inline-block;
+    border: 3px solid rgb(39, 255, 1);
+    color: rgb(39, 255, 1);
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    color: chartreuse;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Akronim', cursive;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: rgb(63, 106, 245);
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    color: chartreuse;
+    font-weight: bolder;
+}
+
+header.sticky ul li a:hover{
+    color: chartreuse;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header.sticky .logo{
+    color: chartreuse;
+    font-family: 'Akronim', cursive;
+}
+
+header.sticky ul li a{
+    color: #000;
+}
+
+color{
+    color: chartreuse;
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.heading h2{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.about h2{
+    color: chartreuse;
+}
+
+.about .content p{
+    font-weight: 200;
+}
+
+.about .content p strong{
+    font-style: italic;
+    font-weight: 500;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contentBx{
+    padding-right: 30px;
+}
+
+.contentBx h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.w50{
+    max-width: 50%;
+}
+
+img{
+    max-width: 100%;
+}
+
+.services{
+    background-color: #111;
+}
+
+.heading.white{
+    color: #fff;
+}
+
+.services .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.services .content .servicesBx{
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+}
+
+.services .content .servicesBx:hover{
+    background-color: chartreuse;
+    cursor: pointer;
+}
+
+.services .content .servicesBx img{
+    max-width: 80px;
+}
+
+.servicesBx:hover color{
+    color: #999;
+}
+
+.services .content .servicesBx h2{
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.services .content .servicesBx p{
+    color: #999;
+}
+
+.services .content .servicesBx:hover p{
+    color: #f7f7f7;
+}
+
+.work .content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.btn:hover{
+    border: 2px solid rgb(39, 255, 1);
+    background-color: rgb(39, 255, 1);
+    color: #fff;
+}
+
+.work .btn{
+    color: #2d3;
+}
+
+.work .btn:hover{
+    color: #fff;
+}
+
+.work .content .workBx{
+    width: 50%;
+    padding: 20px;
+}
+
+.work .content .workBx img{
+    max-width: 100%;
+}
+
+.contact{
+    background-color: #111;
+}
+
+/* Responsive Behaviour */
+
+
+@media (max-width: 1190px){
+    header, header.sticky{
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+
+    .menu{
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        display: block;
+        padding: 100px 20px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 999;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .content{
+        flex-direction: column;
+    }
+    
+    .w50{
+        max-width: 100%;
+    }
+        
+    h3{
+        font-size: 17px;
+    }
+   
+    h2{
+        font-size: 23px;
+    }
+  
+    .banner{
+        padding: 100px 50px;
+    }
+   
+    .contentBx{
+        margin: 1rem 0;
+        padding-right: 0;
+    }
+   
+    .about{
+        padding: 100px 20px;
+    }
+    
+    .services{
+        padding: 100px 30px;
+    }
+    
+    .work{
+        padding: 100px 30px;
+    }
+    
+    .work .content .workBx{
+        width: 100%;
+    }
+    
+    p{
+        font-size: 13px;
+    }
+  
+    .contact h2{
+        font-size: 21px;
+        margin-bottom: 1rem;
+    }
+
+    
+    .contact{
+        padding: 100px 20px;
+    }
+
+    
+    .contact form h3{
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    
+    .contact p{
+        margin-bottom: 1rem;
+    }
+
+    header ul li a{
+        color: #111;
+        font-size: 24px;
+        margin: 10px;
+    }
+    
+    
+    .menu.active{
+        left: 0%;
+    }
+
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background: url('menu.png') no-repeat;
+        background-position: center;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    .toggle.active{
+        background: url('close.png') no-repeat;
+        background-position: center;
+        background-size: 25px;
+        cursor: pointer;
+    }
+
+    header.sticky .toggle{
+        filter: invert(1);
+    }
+}
+
+@media (max-width:440px){
+    footer .sec{
+        margin-top: 1rem;
+    }
+
+    .sec.aboutus{
+        margin-bottom: 3em;
+    }
+
+    .sec p, .sec h2{
+        width: 250px;
+        align-items: justify;
+    }
+}
